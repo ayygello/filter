@@ -12,7 +12,7 @@ const Portfolio = () => {
     setSelectedFilter(() => newSelectedFilter);
 
     if (newSelectedFilter !== 'All') {
-      const filteredProjects = projects.filter(
+      const filteredProjects = initialValues.filter(
         (el) => el.category === newSelectedFilter
       );
       setProjects(filteredProjects);
@@ -22,7 +22,7 @@ const Portfolio = () => {
   };
 
   return (
-    <div className='header'>
+    <div className='wrapper'>
       <div className='tool-bar'>
         <Toolbar
           filters={['All', 'Websites', 'Flayers', 'Business Cards']}
