@@ -32,7 +32,7 @@ const Portfolio = () => {
       </div>
       <div className='portfolio'>
         {projects.map((el, index) => (
-          <ProjectList key={index} image={el.img} selected={el.category} />
+          <ProjectList key={index} image={el.img} />
         ))}
       </div>
     </div>
