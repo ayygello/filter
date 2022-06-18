@@ -5,8 +5,10 @@
 }
 
 .wrapper {
+  width: 90%;
+  max-width: 1000px;
   display: flex;
-  margin-left: 20vw;
+  margin: 3rem auto;
   flex-wrap: wrap;
   flex-direction: column;
 }
